@@ -1,0 +1,101 @@
+body{
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    box-sizing: border-box;
+    display: flex;
+   justify-content: center;
+}
+.game-container {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 300px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.game-instructions {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-style: oblique;
+  span{
+      font-weight: bold;
+  }
+}
+
+.game-title{
+    background-image: linear-gradient(to bottom, #52154e, #f641d8, #ebc5e5); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 5px;
+}
+  
+.colour-box {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+  
+.colour-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+  
+.colour-button {
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 20px 20px  0px 20px ;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+  
+.colour-button:hover {
+    transform: scale(1.1);
+}
+  
+.colour-button:active {
+    transform: scale(0.9);
+}
+  
+.game-status {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+  
+.score {
+    font-size: 18px;
+    margin-top: 10px;
+}
+  
+.new-game-button {   
+    width: 130px;
+    height: 40px;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    border-radius: 10px;
+    border: none;
+    background: #ff6392;
+    box-shadow: 0 5px #ff0a78;
+}
+  
+.new-game-button:hover {
+    box-shadow: 0 3px #ff0a78;
+    top: 1px;  
+}
+  
+.new-game-button:active {
+    box-shadow: 0 0 #ff0a78;
+    top: 5px;
+}
+  
