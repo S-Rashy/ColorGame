@@ -34,7 +34,7 @@ const Game = () => {
   };
 
   const startNewGame = () => {
-    setScore(0); // Reset the score only when New Game is clicked
+    setScore(0); 
     startNewRound();
   };
 
