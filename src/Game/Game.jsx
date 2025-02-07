@@ -58,7 +58,7 @@ const Game = () => {
         id="colourBox"
         className="colour-box"
         style={{ backgroundColor: targetColour }}
-        data-testid="colourBox"
+        data-testid="colorBox"
       ></div>
       <div id="colourOptions" className="colour-options">
         {shuffledColours.map((colour, index) => (
@@ -67,13 +67,13 @@ const Game = () => {
             className="colour-button"
             style={{ backgroundColor: colour }}
             onClick={() => handleGuess(colour)}
-            data-testid="colourOption"
+            data-testid="colorOption"
           >
           </button>
         ))}
       </div>
 
-      <h3>{status}</h3>
+      <h3 data-testid="gameStatus">{status}</h3>
 
       <p id="score" className="score" data-testid="score">
         Score: {score}
